@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<your-org>/gitops-repo.git'
+    repoURL: 'https://github.com/ath3110/my-proj-argo.git'
     targetRevision: main
     path: argocd/overlay/prod
   destination:
