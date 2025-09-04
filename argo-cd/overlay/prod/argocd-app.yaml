@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/ath3110/my-proj-argo.git'
     targetRevision: main
-    path: argocd/overlay/prod
+    path: argo-cd/overlay/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd-gitops
