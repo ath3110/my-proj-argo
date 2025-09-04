@@ -5,4 +5,4 @@ namespace: argocd-gitops
 
 resources:
   - namespace.yaml
-  - install.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
