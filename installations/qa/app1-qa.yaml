@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-app-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ath3110/my-proj-argo.git
+    targetRevision: main
+    path: apps/app-1/overlay/qa  # prod overlay path
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: sample-prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
