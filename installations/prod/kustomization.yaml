@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   # Each file is an ArgoCD Application CR pointing to an app
-  - sample-app-prod.yaml
+  - app1-prod.yaml
