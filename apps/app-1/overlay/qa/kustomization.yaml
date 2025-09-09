@@ -1,5 +1,7 @@
+namespace: qa-ns
 resources:
   - ../../base
+  - namespace.yaml
 
 patches:
   - path: deployment.yaml
