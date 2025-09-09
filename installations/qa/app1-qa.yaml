@@ -8,10 +8,9 @@ spec:
   source:
     repoURL: https://github.com/ath3110/my-proj-argo.git
     targetRevision: main
-    path: apps/app-1/overlay/qa  # prod overlay path
+    path: apps/app-1/overlay/qa  # qa overlay path
   destination:
     server: https://kubernetes.default.svc
-    namespace: sample-prod
   syncPolicy:
     automated:
       prune: true
