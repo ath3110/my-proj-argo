@@ -3,4 +3,4 @@ kind: Deployment
 metadata:
   name: app-1
 spec:
-  replicas: 5   # Prod uses 3 replicas
+  replicas: 2   # Prod uses 2 replicas
