@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps-qa-2
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ath3110/my-proj-argo.git
+    targetRevision: main
+    path: apps/app-2/overlay/qa  # qa overlay path
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: qa-ns
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

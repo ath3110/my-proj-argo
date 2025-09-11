@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   # Each file is an ArgoCD Application CR pointing to an app
   - app1-qa.yaml
+  - app2-qa.yaml
